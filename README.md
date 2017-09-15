@@ -1,3 +1,5 @@
+[![Build Status](https://drone.stackdot.com/api/badges/stackdot/kube-openvpn/status.svg)](https://drone.stackdot.com/stackdot/kube-openvpn)
+
 kube-openvpn
 ==================
 
