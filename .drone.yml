@@ -1,0 +1,12 @@
+
+pipeline:
+  docker:
+    image: plugins/docker
+    repo: docker.stackdot.com/stackdot/open-vpn
+    tag:
+      - '${DRONE_BRANCH/master/latest}'
+      - '${DRONE_BRANCH}.build-${DRONE_BUILD_NUMBER}'
+    storage_driver: overlay
+    when:
+      branch: [ master, prod ]
+
